@@ -41,7 +41,7 @@ fi
 
 # Require libtool 1.4 or newer
 if test -z "$libtool"; then
-  libtool=`build/PrintPath glibtool1 glibtool libtool libtool15 libtool14`
+  libtool=`build/PrintPath glibtool1 glibtool libtool libtool15 libtool14 libtoolize`
 fi
 lt_pversion=`$libtool --version 2>/dev/null|sed -e 's/([^)]*)//g;s/^[^0-9]*//;s/[- ].*//g;q'`
 if test -z "$lt_pversion"; then
